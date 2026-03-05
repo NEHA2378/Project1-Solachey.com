@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Jost", sans-serif;
+}
+
+#navbarNav ul li a{
+    font-weight: 500;
+    font-size: 18px;
+    padding: 20px 12px;
+    color: #000;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+header{
+    top: 30px;
+}
+.headerScrollFixed{
+    top: 0;
+    transition: 0.5s;
+}
+.btnEnquiry{
+    background-color: #123062;
+    color: white;
+    padding: 7px 25px;
+    border-radius: 20px;
+}
+
+#homeBannerSlider .carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 80% 80%;
+    background-color: red;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.discoverSection{
+    background-color: #F2F2F6;
+}
+
+.discoverItem{
+    position: relative;
+    overflow: hidden;
+}
+.discoverOverlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    transition: 0.5s;
+}
+.discoverOverlay h3{
+    font-size: 20px;
+}
+
+.discoverItem:hover .discoverOverlay{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.discoverItem img{
+    transition: 0.5s;
+}
+
+.discoverItem:hover img{
+    transform: scale(1.2);
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0;
+  }
+
+.aboutSection{
+    background-color: #F2F2F6;
+}
+
+@keyframes left-right {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.tpabout__inner-thumb-2 > img {
+    animation: left-right 3s infinite linear;
+}
+
+.aboutContent h2{
+    color: #123062;
+}
+  
+.wallFanSectionMid{
+    background-image: url(https://solachey.com/wp-content/uploads/2025/04/wall-fan-Promotional-Offer-Banner-Desktop-version-without-text.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.tpcoundown {
+    padding: 170px 5px 170px 5px;
+}
+
+.section__sub-title {
+    font-family: "Schoolbell", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: white;
+    display: block;
+    text-transform: uppercase;
+}
+
+.section__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: -0.5px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.sectionContent p {
+    color: white;
+}
+.aboutBtn{
+    padding: 4px 36px;
+    background-color: #123062;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    border-radius: 50px;
+    font-size: 13px;
+}
+
+.testimonialSection{
+    background-color: #F2F2F6;
+}
+
+.testimonialTitle h4 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    color: #123062;
+    letter-spacing: -0.3px;
+}
+.testimonialItem{
+    text-align: center;
+}
+
+.testimonialItem h5{
+    color: #123062;
+    margin-top: 20px;
+}
+
+.blogSection{
+    background-color: #F2F2F6;
+}
+
+.blogContainer h6{
+    color: green;
+}
+.blogContainer h3{
+    color: #123062;
+    font-weight: bold;
+}
+
+.blogBtn{
+    border: none;
+    background: none;
+    color: green;
+    padding: 0;
+    font-size: 12px;
+}
+
+.blogCard h5{
+    color: #123062;
+}
+
+.footerSection{
+    background-color: aliceblue;
+}
+
+.footeritem1 figure{
+    width: 50%;
+    background-color: white;
+    border-radius: 5px;
+}
+.footeritem1 figure img{
+    width: 100%;
+}
+.footeritem1 p{
+    margin-top: 10px;
+}
+.footeritem1 h4{
+    color: navy;
+    padding: 30px 0px;
+    text-transform: uppercase;
+    /* font-weight: lighter; */
+}
+
+.footersocialicon{
+    color: green;
+    display: flex;
+    gap: 10px;
+    font-size: 24px;
+}
+
+.footeritem2 h4{
+    color: navy;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+.footeritem2 p{
+    padding-bottom: 30px;
+    line-height: 25px;
+}
+.footeritem2 h5{
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+.footeritem2 h6{
+    /* padding-bottom: 30px; */
+    font-size: 16px;
+}
+
+.footeritem3 h4{
+    color: navy;
+    padding-bottom: 30px;
+}
+.footeritem3 h5{
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+.footeritem3 ul{
+    text-transform: uppercase;
+    list-style: none;
+    padding-left: 0;
+}
+.footeritem3 ul li{
+    line-height: 25px;
+    padding-bottom: 5px;
+}
+
+.footeritem4 h4{
+    color: navy;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.footeritem4 form button{
+    margin-top: 30px;
+    color: white;
+    background-color: green;
+    border: none;
+}
+.copyright{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    padding-top: 40px;
+}
+.item {
+    background: #ff3f4d;
+}
+.formlabel{
+    display: block;
+}
+#contact-name{
+    width: 100%;
+}
+
+#phone-number{
+    width: 100%;
+}
+
+#email-id{
+    width: 100%;
+}
+
+#msg-id{
+    width: 100%;
+}
