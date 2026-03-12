@@ -71,10 +71,16 @@ header{
     transform: scale(1.2);
 }
 
-.navbar .dropdown:hover .dropdown-menu {
-      display: block;
-      margin-top: 0;
-  }
+/* hide dropdown initially */
+.navbar .dropdown-menu{
+    display: none;
+}
+
+/* show dropdown on hover */
+.navbar .dropdown:hover .dropdown-menu{
+    display: block;
+    margin-top: 0;
+}
 
 .aboutSection{
     background-color: #F2F2F6;
@@ -282,18 +288,40 @@ header{
 .formlabel{
     display: block;
 }
-#contact-name{
+#footer-contact-name{
     width: 100%;
 }
 
-#phone-number{
+#footer-phone-number{
     width: 100%;
 }
 
-#email-id{
+#footer-email-id{
     width: 100%;
 }
 
-#msg-id{
+#footer-msg-id{
     width: 100%;
+}
+.aboutpageP{
+    font-size: 18px;
+}
+dt, dd{
+  display: inline;
+}
+
+dd{
+  margin-left: 5px;
+}
+
+.productSection{
+    background-color: #F2F2F6;
+}
+
+.homeSpan{
+    cursor: pointer;
+}
+.homeSpan a{
+    text-decoration: none;
+    color: #000;
 }

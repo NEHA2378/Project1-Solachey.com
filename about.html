@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/media.css">
+    <title>About Page</title>
+</head>
+
+<body>
+    <!--Mobile Menu-->
+    <div class="offcanvas w-75 offcanvas-start" id="mobileMenu">
+        <div class="offcanvas-header py-0 border-bottom">
+            <a href="" class="navbar-brand">
+                <img src="Images/logo.svg" alt="" width="120px">
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav text-uppercase">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">home</a>
+                </li>
+                <li class="nav-item"><a href="about.html" class="nav-link">about us</a></li>
+               <li class="nav-item dropdown">
+                                    <a class="nav-link" href="product.html">PRODUCTS</a>
+
+                                    <ul class="dropdown-menu shadow border-0 p-3">
+                                        <li><a class="dropdown-item" href="#">ILLUMINATION & LIGHT SOURCES</a></li>
+                                        <li><a class="dropdown-item" href="#">LED FIXTURES</a></li>
+                                        <li><a class="dropdown-item" href="#">HVAC PRODUCTS</a></li>
+                                        <li><a class="dropdown-item" href="#">WIRES</a></li>
+                                        <li><a class="dropdown-item" href="#">VENTILATION PRODUCTS</a></li>
+                                        <li><a class="dropdown-item" href="#">WIRING ACCESSORIES</a></li>
+                                    </ul>
+                                </li>
+                <li class="nav-item"><a href="#" class="nav-link">blog</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">contact us</a></li>
+            </ul>
+            <button class="btnEnquiry btn btn-primary" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire
+                Now</button>
+        </div>
+    </div>
+    <!--Modal div-->
+    <div class="modal fade" id="enquireModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">ENQUIRE NOW</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" id="contact-name" onkeyup="validateName()" class="form-control"
+                                placeholder="Your Name *">
+                            <span id="name-error"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="email" id="email-id" onkeyup="validateEmail()" class="form-control"
+                                placeholder="Your Email *">
+                            <span id="email-error"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="tel" id="phone-number" onkeyup="validatePhone()" class="form-control"
+                                placeholder="Phone *">
+                            <span id="phone-error"> </span>
+                        </div>
+
+                        <div class="mb-3">
+                            <textarea class="form-control" id="msg-id" onkeyup="validateMsg()" rows="3"
+                                placeholder="Message *"></textarea>
+                            <span id="msg-error"> </span>
+                        </div>
+
+                        <button id="saveBtn" class="btn btn-success w-100" onclick="return validateForm()">SEND
+                            MESSAGE</button>
+                        <span id="submit-error"></span>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--product dropdown-->
+
+
+
+    <header class="container-fluid bg-white shadow position-fixed z-2"> <!--Container -fluid is user for 100% area-->
+        <div class="container"> <!--Container is user for mid area-->
+            <div class="row">
+                <div class="col-12"> <!--12 columns in row-->
+                    <nav class="navbar navbar-expand-lg p-0">
+                        <a href="" class="navbar-brand">
+                            <img src="Images/logo.svg" alt="" width="120px">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#mobileMenu" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end gap-5" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="home.html" class="nav-link">home</a>
+                                </li>
+                                <li class="nav-item"><a href="#" class="nav-link">about us</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="product.html">PRODUCTS</a>
+
+                                    <ul class="dropdown-menu shadow border-0 p-3">
+                                        <li><a class="dropdown-item" href="#">ILLUMINATION & LIGHT SOURCES</a></li>
+                                        <li><a class="dropdown-item" href="#">LED FIXTURES</a></li>
+                                        <li><a class="dropdown-item" href="#">HVAC PRODUCTS</a></li>
+                                        <li><a class="dropdown-item" href="#">WIRES</a></li>
+                                        <li><a class="dropdown-item" href="#">VENTILATION PRODUCTS</a></li>
+                                        <li><a class="dropdown-item" href="#">WIRING ACCESSORIES</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a href="#" class="nav-link">blog</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">contact us</a></li>
+                            </ul>
+                            <button class="btnEnquiry btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#enquireModal">Enquire Now</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container-fluid p-0 position-relative">
+        <img src="Images/About-us-banner-without-text.png" class="w-100 object-fit-cover" style="height:70vh;">
+
+        <h2 class="position-absolute top-50 start-50 translate-middle text-dark text-white fw-bold"
+            style="font-size:60px;">
+            About Us
+        </h2>
+    </section>
+
+    <section class="container-fluid">
+        <div class="container">
+            <p class="text-center pt-5 aboutpageP">Solachey is a leading brand in the USA, specializing in modern
+                lighting, illumination
+                solutions, and HVAC supplies. We proudly serve both trade and contract professionals, as well as
+                everyday consumers, delivering high-quality, innovative products that meet diverse needs. We are driven
+                and passionate to meet the customer’s lighting and space conditioning requirements.</p>
+            <p class="text-center pb-5 aboutpageP">From energy-efficient lighting to advanced HVAC systems, Solachey
+                offers a unique mix of modern solutions, including exclusive pieces that can only be found with us. With
+                a focus on quality and innovation, we are dedicated to inspiring and transforming spaces through
+                superior design and technology.</p>
+        </div>
+    </section>
+
+    <section class="container-fluid aboutSection">
+        <div class="container">
+            <div class="row align-items-center py-5">
+                <div class="col-lg-6">
+                    <div class=" tpabout__inner-thumb-2 p-relative aboutImg">
+                        <img src="Images/Partner-with-us-scaled.jpg" alt="" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="px-1 ">
+                        <h2 class="fw-bold fs-1">Partner with Us - Solachey</h2>
+                        <p class="fs-5">At Solachey, we believe that great partnerships are built on trust,
+                            collaboration, and a shared vision for success. We are committed to creating meaningful
+                            relationships that empower businesses and organizations to grow, innovate, and thrive in an
+                            ever-evolving market.</p>
+                        <dl class="fs-5">
+                            <dt>Tailored Collaboration:</dt>
+                            <dd>We understand that each partner has specific goals, challenges, and aspirations. Our
+                                approach is personalized and flexible, ensuring that the partnership is mutually
+                                beneficial and aligned with your business objectives.</dd><br>
+
+                            <dt>Shared Success:</dt>
+                            <dd>We believe in win-win partnerships. At Solachey, we prioritize the long-term success of
+                                our partners by working together to achieve common goals. Your success is our success.
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="whyChooseUsSection">
+        <div class="container-fluid">
+            <div class="container">
+                <div class=" row justify-content-between py-5 gap-5">
+                    <div class="col">
+                        <div class="card border-0 rounded-0">
+                            <img src="Images/mission-vision-2.png" class="card-img-top rounded-0" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Mission & Vision</h5>
+                                <p class="card-text">Solachey's mission is to inspire and connect the world with
+                                    superior quality and modern technology products, leading the way in innovation and
+                                    delivering a best-in-class customer experience through our website, and customer
+                                    support teams.  As experts ourselves, we understand all the steps involved in
+                                    projects large and small and provide our customers with the tools and customer
+                                    assistance they need to make their next project shine.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card border-0 rounded-0">
+                            <img src="Images/sustainbility.png" class="card-img-top rounded-0" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Sustainability</h5>
+                                <p class="card-text">At Solachey, we believe that innovation and sustainability go hand
+                                    in hand. From energy-saving LED lighting to eco-friendly HVAC systems, we are
+                                    dedicated to offering solutions that minimize energy consumption without
+                                    compromising on quality or style. By choosing Solachey, you're not just investing in
+                                    cutting-edge products, you're supporting a brand that values sustainability and
+                                    actively works to reduce its carbon footprint.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card border-0 rounded-0">
+                            <img src="Images/Gulf_Confirmity_mark.png" class="card-img-top rounded-0" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Certification</h5>
+                                <p class="card-text">At Solachey, we are committed to delivering products that not only
+                                    meet but exceed the highest industry standards. Our entire product range is proudly
+                                    GMARK certified, a globally recognized symbol of excellence, quality, safety, and
+                                    sustainability. This certification reinforces our dedication to providing consumers
+                                    across the Gulf Cooperation Council (GCC) region with the very best.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ytvidSection">
+        <div class="container-fluid my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                        <iframe width="100%" height="520" class="rounded-4"
+                            src="https://www.youtube.com/embed/63C7qLLQFnc"
+                            title="Solachey — A Leading Name in Electrical Solutions" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 footerSection">
+        <div class="contanair-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col footeritem1">
+                        <figure>
+                            <img src="Images/logo-1.png" />
+                        </figure>
+                        <p>Transform Your Space with Solachey!</p>
+                        <h4>Social Media:</h4>
+                        <div class="footersocialicon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                    <div class="col footeritem2">
+                        <h4>Address</h4>
+                        <p>18 St, Shuwaikh Industrial Kuwait</p>
+                        <h5>Working Hours –</h5>
+                        <h6>Shuwaikh – Kuwait</h6>
+                        <p>Saturday – Thursday: 8:00 AM – 1:30 PM, 3:30 PM – 8:00 PM, Friday: Closed</p>
+                        <h6>Hawally – Kuwait</h6>
+                        <p>Saturday – Thursday: 8:00 AM – 1:30 PM, 4:00 PM – 9:00 PM, Friday: Closed</p>
+                    </div>
+                    <div class="col footeritem3">
+                        <h4>CATEGORIES</h4>
+                        <ul>
+                            <li>HVAC Products</li>
+                            <li>Illumination and Light Resources</li>
+                            <li>LED Fixures</li>
+                            <li>Ventilation Products</li>
+                            <li>Wires</li>
+                            <li>Wiring and Accessories</li>
+                        </ul>
+                    </div>
+                    <div class="col footeritem4">
+                        <h4>Enquire Now</h4>
+                        <form>
+
+                            <div class="input-group">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="Enter your name" id="footer-contact-name"
+                                    onkeyup="validatefooterName()">
+                                <span id="footer-name-error"></span>
+                            </div>
+
+                            <div class="input-group">
+                                <label>Phone No.</label>
+                                <input type="tel" placeholder="123 456 7890" id="footer-phone-number"
+                                    onkeyup="validatefooterPhone()">
+                                <span id="footer-phone-error"></span>
+                            </div>
+
+                            <div class="input-group">
+                                <label>Email Id</label>
+                                <input type="email" placeholder="Enter Email" id="footer-email-id" onkeyup="validatefooterEmail()">
+                                <span id="footer-email-error"></span>
+                            </div>
+
+                            <div class="input-group">
+                                <label>Your Message</label>
+                                <textarea rows="5" placeholder="Enter your message" id="footer-msg-id"
+                                    onkeyup="validatefooterMsg()"></textarea>
+                                <span id="footer-msg-error"> </span>
+                            </div>
+
+                            <button onclick="return validatefooterForm()">Submit</button>
+                            <span id="submit-footer-error"></span>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr style="color: blue;" />
+            <div class="copyright">
+                <p>Copyright 2025© Solachey all rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="JS/app.js"></script>
+
+</html>
