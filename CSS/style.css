@@ -2,6 +2,9 @@
 
 *{
     font-family: "Jost", sans-serif;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 #navbarNav ul li a{
@@ -324,4 +327,10 @@ dd{
 .homeSpan a{
     text-decoration: none;
     color: #000;
+}
+/* .productPageCategories{
+    height: 500px;
+} */
+.productPageCategories h5{
+    color: #123062;
 }

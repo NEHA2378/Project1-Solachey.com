@@ -94,7 +94,7 @@
         </div>
     </div>
 
-    <header class="container-fluid bg-white shadow position-fixed z-2"> <!--Container -fluid is user for 100% area-->
+    <header class="container-fluid bg-white shadow position-sticky z-2"> <!--Container -fluid is user for 100% area-->
         <div class="container"> <!--Container is user for mid area-->
             <div class="row">
                 <div class="col-12"> <!--12 columns in row-->
@@ -137,17 +137,33 @@
         </div>
     </header>
 
-    <section class="container-fluid productSection">
+    <section class="container-fluid productSection py-5">
         <div class="container">
             <div class="py-3 fs-[12px] text-black-50">
                 <span class="homeSpan"><a href="home.html">Home</a> / </span>
                 <span class="productSpan">Products</span>
             </div>
-            <div class="categories">
-                
-            </div>
-            <div class="productItems">
-
+            <div class="grid grid-cols-12 gap-2">
+                <div class="bg-white rounded-3 p-4 col-span-3 productPageCategories">
+                    <h5 class="text-uppercase">Product Categories</h5>
+                    <div>
+                        <h6>HVAC Products (3)</h6>
+                        <h6>Illumination & Light</h6>
+                        <h6>Sources (6)</h6>
+                        <h6>LED FIXTURES (10)</h6>
+                        <h6>Ventilation Products (4)</h6>
+                        <h6>Wires (1)</h6>
+                        <h6>Wiring Accessories (3)</h6>
+                    </div>
+                </div>
+                <div class="col-span-9 bg-white rounded-3 p-4 productItems">
+                    <div class="grid grid-cols-12 gap-2">
+                        <div class="p-5 col-span-4">
+                            <img src="https://solachey.com/wp-content/uploads/2024/12/SLY400WFLT-1024x1024.png"
+                                height="300px" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
