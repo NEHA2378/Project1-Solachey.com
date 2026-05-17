@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     font-family: "Jost", sans-serif;
     list-style: none;
     margin: 0px;
     padding: 0px;
 }
 
-#navbarNav ul li a{
+#navbarNav ul li a {
     font-weight: 500;
     font-size: 18px;
     padding: 20px 12px;
@@ -17,21 +17,24 @@
     transition: 0.5s;
 }
 
-header{
+header {
     top: 30px;
 }
-.headerScrollFixed{
+
+.headerScrollFixed {
     top: 0;
     transition: 0.5s;
 }
-.btnEnquiry{
+
+.btnEnquiry {
     background-color: #123062;
     color: white;
     padding: 7px 25px;
     border-radius: 20px;
 }
 
-#homeBannerSlider .carousel-control-next-icon, .carousel-control-prev-icon {
+#homeBannerSlider .carousel-control-next-icon,
+.carousel-control-prev-icon {
     display: inline-block;
     width: 3rem;
     height: 3rem;
@@ -43,15 +46,16 @@ header{
     border-radius: 50%;
 }
 
-.discoverSection{
+.discoverSection {
     background-color: #F2F2F6;
 }
 
-.discoverItem{
+.discoverItem {
     position: relative;
     overflow: hidden;
 }
-.discoverOverlay{
+
+.discoverOverlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -59,33 +63,35 @@ header{
     top: 0;
     transition: 0.5s;
 }
-.discoverOverlay h3{
+
+.discoverOverlay h3 {
     font-size: 20px;
 }
 
-.discoverItem:hover .discoverOverlay{
+.discoverItem:hover .discoverOverlay {
     background-color: rgba(0, 0, 0, 0.6);
 }
-.discoverItem img{
+
+.discoverItem img {
     transition: 0.5s;
 }
 
-.discoverItem:hover img{
+.discoverItem:hover img {
     transform: scale(1.2);
 }
 
 /* hide dropdown initially */
-.navbar .dropdown-menu{
+.navbar .dropdown-menu {
     display: none;
 }
 
 /* show dropdown on hover */
-.navbar .dropdown:hover .dropdown-menu{
+.navbar .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
 }
 
-.aboutSection{
+.aboutSection {
     background-color: #F2F2F6;
 }
 
@@ -93,23 +99,25 @@ header{
     0% {
         transform: translateX(0px);
     }
+
     50% {
         transform: translateX(20px);
     }
+
     100% {
         transform: translateX(0px);
     }
 }
 
-.tpabout__inner-thumb-2 > img {
+.tpabout__inner-thumb-2>img {
     animation: left-right 3s infinite linear;
 }
 
-.aboutContent h2{
+.aboutContent h2 {
     color: #123062;
 }
-  
-.wallFanSectionMid{
+
+.wallFanSectionMid {
     background-image: url(https://solachey.com/wp-content/uploads/2025/04/wall-fan-Promotional-Offer-Banner-Desktop-version-without-text.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -142,7 +150,8 @@ header{
 .sectionContent p {
     color: white;
 }
-.aboutBtn{
+
+.aboutBtn {
     padding: 4px 36px;
     background-color: #123062;
     display: inline-block;
@@ -155,7 +164,7 @@ header{
     font-size: 13px;
 }
 
-.testimonialSection{
+.testimonialSection {
     background-color: #F2F2F6;
 }
 
@@ -166,28 +175,30 @@ header{
     color: #123062;
     letter-spacing: -0.3px;
 }
-.testimonialItem{
+
+.testimonialItem {
     text-align: center;
 }
 
-.testimonialItem h5{
+.testimonialItem h5 {
     color: #123062;
     margin-top: 20px;
 }
 
-.blogSection{
+.blogSection {
     background-color: #F2F2F6;
 }
 
-.blogContainer h6{
+.blogContainer h6 {
     color: green;
 }
-.blogContainer h3{
+
+.blogContainer h3 {
     color: #123062;
     font-weight: bold;
 }
 
-.blogBtn{
+.blogBtn {
     border: none;
     background: none;
     color: green;
@@ -195,88 +206,98 @@ header{
     font-size: 12px;
 }
 
-.blogCard h5{
+.blogCard h5 {
     color: #123062;
 }
 
-.footerSection{
+.footerSection {
     background-color: aliceblue;
 }
 
-.footeritem1 figure{
+.footeritem1 figure {
     width: 50%;
     background-color: white;
     border-radius: 5px;
 }
-.footeritem1 figure img{
+
+.footeritem1 figure img {
     width: 100%;
 }
-.footeritem1 p{
+
+.footeritem1 p {
     margin-top: 10px;
 }
-.footeritem1 h4{
+
+.footeritem1 h4 {
     color: navy;
     padding: 30px 0px;
     text-transform: uppercase;
     /* font-weight: lighter; */
 }
 
-.footersocialicon{
+.footersocialicon {
     color: green;
     display: flex;
     gap: 10px;
     font-size: 24px;
 }
 
-.footeritem2 h4{
+.footeritem2 h4 {
     color: navy;
     padding-bottom: 30px;
     text-transform: uppercase;
 }
-.footeritem2 p{
+
+.footeritem2 p {
     padding-bottom: 30px;
     line-height: 25px;
 }
-.footeritem2 h5{
+
+.footeritem2 h5 {
     padding-bottom: 30px;
     font-size: 16px;
 }
-.footeritem2 h6{
+
+.footeritem2 h6 {
     /* padding-bottom: 30px; */
     font-size: 16px;
 }
 
-.footeritem3 h4{
+.footeritem3 h4 {
     color: navy;
     padding-bottom: 30px;
 }
-.footeritem3 h5{
+
+.footeritem3 h5 {
     padding-bottom: 30px;
     font-size: 16px;
 }
-.footeritem3 ul{
+
+.footeritem3 ul {
     text-transform: uppercase;
     list-style: none;
     padding-left: 0;
 }
-.footeritem3 ul li{
+
+.footeritem3 ul li {
     line-height: 25px;
     padding-bottom: 5px;
 }
 
-.footeritem4 h4{
+.footeritem4 h4 {
     color: navy;
     padding-bottom: 30px;
     text-transform: uppercase;
 }
 
-.footeritem4 form button{
+.footeritem4 form button {
     margin-top: 30px;
     color: white;
     background-color: green;
     border: none;
 }
-.copyright{
+
+.copyright {
     max-width: 1440px;
     margin: auto;
     display: flex;
@@ -285,52 +306,170 @@ header{
     align-items: center;
     padding-top: 40px;
 }
+
 .item {
     background: #ff3f4d;
 }
-.formlabel{
+
+.formlabel {
     display: block;
 }
-#footer-contact-name{
+
+#footer-contact-name {
     width: 100%;
 }
 
-#footer-phone-number{
+#footer-phone-number {
     width: 100%;
 }
 
-#footer-email-id{
+#footer-email-id {
     width: 100%;
 }
 
-#footer-msg-id{
+#footer-msg-id {
     width: 100%;
 }
-.aboutpageP{
+
+.aboutpageP {
     font-size: 18px;
 }
-dt, dd{
-  display: inline;
+
+dt,
+dd {
+    display: inline;
 }
 
-dd{
-  margin-left: 5px;
+dd {
+    margin-left: 5px;
 }
 
-.productSection{
+.productSection {
     background-color: #F2F2F6;
 }
 
-.homeSpan{
+.homeSpan {
     cursor: pointer;
 }
-.homeSpan a{
+
+.homeSpan a {
     text-decoration: none;
     color: #000;
 }
-/* .productPageCategories{
-    height: 500px;
-} */
-.productPageCategories h5{
-    color: #123062;
+
+.productPageCategories .catLink {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #444;
+    transition: background 0.15s, color 0.15s;
+    margin-bottom: 2px;
+}
+
+.productPageCategories .catLink:hover,
+.productPageCategories .catLink.active {
+    background: #e8f0fe;
+    color: #0d6efd;
+}
+
+.productPageCategories .catLink .catCount {
+    background: #f0f0f0;
+    color: #666;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 20px;
+}
+
+.productPageCategories .catLink.active .catCount,
+.productPageCategories .catLink:hover .catCount {
+    background: #0d6efd;
+    color: #fff;
+}
+
+/* Products Area */
+.productItems {
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+/* Product Card */
+.productCard {
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.2s, transform 0.2s;
+    background: #fff;
+    height: 100%;
+}
+
+.productCard:hover {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.10);
+    transform: translateY(-3px);
+}
+
+.productCard .imgWrap {
+    background: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.productCard .imgWrap img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.productCard:hover .imgWrap img {
+    transform: scale(1.05);
+}
+
+.productCard .cardBody {
+    padding: 14px 16px;
+}
+
+.productCard .catLabel {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #0d6efd;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-bottom: 5px;
+}
+
+.productCard .productName {
+    font-size: 13px;
+    font-weight: 700;
+    color: #222;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.productCard .detailsBtn {
+    display: inline-block;
+    border: 1.5px solid #0d6efd;
+    color: #0d6efd;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 5px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+}
+
+.productCard .detailsBtn:hover {
+    background: #0d6efd;
+    color: #fff;
 }
